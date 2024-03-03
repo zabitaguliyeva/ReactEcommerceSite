@@ -1,0 +1,232 @@
+.review {
+  width: 100%;
+  padding: 112px 0 60px;
+
+  .container {
+    .row {
+      display: flex;
+
+      .ratingTitle {
+        width: 20%;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        margin-right: 70px;
+
+        .ratingMainTitle {
+          font-size: 54px;
+          color: #153a5b;
+          font-weight: bolder;
+          width: 100%;
+          margin-bottom: 8.6px;
+        }
+
+        .customStar {
+          color: #f3756d;
+          font-size: 18px;
+          display: flex;
+          gap: 5px;
+          margin-bottom: 8.6px;
+        }
+
+        .ratingText {
+          margin-bottom: 37.5px;
+          font-size: 14px;
+        }
+      }
+
+      .reviewsBtn {
+        @include primaryBtn();
+      }
+
+      .reviewItemQuoteContainer {
+        max-width: 80%;
+
+        .mySwiperReview {
+          width: 25%;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 264px;
+
+          .reviewItemText {
+            font-size: 19px;
+            color: #153a5b;
+            margin: 0 0 75px;
+            line-height: 1.5;
+          }
+
+          .reviewLogoContainer {
+            width: 93.75px;
+            justify-content: flex-end;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .review {
+    .container {
+      padding-right: 0px;
+
+      .row {
+        flex-direction: column;
+
+        .ratingTitle {
+          width: 100%;
+          gap: 0px;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-right: 0px;
+          margin-bottom: 37.5px;
+        }
+
+        .reviewsBtn {
+          @include primaryBtn();
+
+          margin-right: 64px;
+        }
+
+        .reviewItemQuoteContainer {
+          max-width: 100%;
+          height: 264px !important;
+
+          .mySwiper2 {
+            height: 300px;
+
+            .swiper-pagination {
+              bottom: 0;
+              position: absolute;
+              display: flex;
+
+              .swiper-pagination-bullet {
+                width: 100%;
+                height: 2px;
+                background-color: #5a5e60;
+
+                margin-right: 0;
+                margin-left: 0;
+                border-radius: 0px;
+
+                cursor: pointer;
+              }
+
+              .swiper-pagination-bullet-active {
+                background-color: #5a5e60;
+              }
+            }
+            height: 100%;
+
+            .swiper-slide {
+              width: 100%;
+            }
+
+            .mySwiperReview {
+              width: 348px !important;
+              display: flex;
+              flex-direction: column;
+              height: 100%;
+              background-color: #f5f9fc;
+              padding: 30px;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .review {
+    width: 100%;
+    padding: 112px 0 80px;
+
+    .container {
+      padding-right: 0px;
+      padding-left: 16px;
+
+      .row {
+        display: flex;
+
+        .ratingTitle {
+          width: 100%;
+
+          .ratingMainTitle {
+            font-size: 32px;
+          }
+
+          .customStar {
+            font-size: 20px;
+          }
+
+          .ratingText {
+            font-size: 14px;
+          }
+        }
+
+        .reviewsBtn {
+          display: flex;
+        }
+
+        .reviewItemQuoteContainer {
+          .mySwiperReview {
+            .reviewItemText {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 460px) {
+  .review {
+    width: 100%;
+    padding: 112px 0 80px;
+
+    .container {
+      padding-right: 0px;
+      padding-left: 16px;
+
+      .row {
+        display: flex;
+
+        .ratingTitle {
+          width: 100%;
+
+          .ratingMainTitle {
+            font-size: 32px;
+          }
+
+          .customStar {
+            font-size: 20px;
+          }
+
+          .ratingText {
+            font-size: 14px;
+          }
+        }
+
+        .reviewsBtn {
+          display: none;
+        }
+
+        .reviewItemQuoteContainer {
+          .mySwiperReview {
+            .reviewItemText {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

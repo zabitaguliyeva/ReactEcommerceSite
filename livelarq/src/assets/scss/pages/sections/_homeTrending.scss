@@ -1,0 +1,109 @@
+.trends {
+  width: 100%;
+
+  .container {
+    padding-right: 0;
+    .row {
+      width: 100%;
+ 
+      .trendProducts {
+        width: 100%;
+        display: flex;
+        margin-bottom: 90px;
+        height: 600px;
+.wrapper{
+width: 411px;
+
+        .productCard {
+
+          padding: 0 56px 56px 56px;
+          background-color: #f5f6fa;
+          border-radius: 10px;
+      
+       
+          img {
+            width: 100%;
+            border-radius: 10px;
+          }}
+
+
+          .productTitle {
+            text-align: center;
+            line-height: 1.2;
+            font-weight: 700;
+            color: rgb(21, 58, 91);
+            font-size: 17px;
+          }
+
+          .priceFrom {
+            text-align: center;
+            line-height: 3;
+            color: rgb(21, 58, 91);
+
+            .price {
+              margin-left: 8px;
+            }
+
+            .discount {
+              margin-left: 8px;
+              text-decoration: line-through;
+            }
+          }
+
+          .colorsProduct {
+            display: flex;
+            .productItemHidden {
+              display: none;
+            }
+            .colorItems {
+              display: flex;
+              justify-content: center;
+            }
+            .productItem {
+              display: block;
+              width: 64px;
+              height: 64px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+
+          .colorsProductThumbnail {
+             .swiper-wrapper {
+                 width: 100%;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+          }
+        }
+
+        .swiper-pagination {
+          position: absolute;
+
+          display: flex;
+
+          .swiper-pagination-bullet {
+            width: 33.3%;
+            height: 2px;
+            background-color: #5a5e60;
+
+            margin-right: 0;
+            margin-left: 0;
+            border-radius: 0px;
+
+            cursor: pointer;
+          }
+
+          .swiper-pagination-bullet-active {
+            background-color: #5a5e60;
+          }
+        }
+      }
+    }
+  }
+}
+

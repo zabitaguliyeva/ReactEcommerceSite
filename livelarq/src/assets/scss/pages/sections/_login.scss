@@ -1,0 +1,293 @@
+.loginPage {
+  
+
+    .container {
+      
+        .sectionTitle {
+        
+            text-align: center !important;
+        }
+
+        .row {
+         flex-direction: column;
+         padding-top: 120px;
+         margin-bottom: 180px;
+
+            .loginContainer {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+
+
+
+                .loginForm {
+                    display: flex;
+                    flex-direction: column;
+                    width: 438px;
+
+                    .emailContainer {
+                        .label {
+                            font-size: 15px;
+                            color: #5a5e60;
+                            line-height: 1.5;
+                        }
+
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        margin-bottom: 30px;
+
+                        input[type="text"] {
+                            height: 44.6px;
+                            width: 100%;
+                            color: #5a5e60;
+                            margin: 0;
+                            border: 1px solid #cccccc;
+                            display: block;
+                            padding: 0.634rem 1rem;
+                            outline: none !important;
+                            font-size: 16px;
+                            transition: border-color .1s ease-out;
+
+                            border-radius: 0;
+                            background-color: #ffffff;
+
+                        }
+                    }
+
+                    .passwordContainer {
+                        .label {
+                            font-size: 15px;
+                            color: #5a5e60;
+                            line-height: 1.5;
+                        }
+
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        margin-bottom: 30px;
+
+                        input[type="password"] {
+                            height: 44.6px;
+                            width: 100%;
+                            color: #5a5e60;
+                            margin: 0;
+                            border: 1px solid #cccccc;
+                            display: block;
+                            padding: 0.634rem 1rem;
+                            outline: none !important;
+                            font-size: 16px;
+                            transition: border-color .1s ease-out;
+
+                            border-radius: 0;
+                            background-color: #ffffff;
+                        }
+
+                    }
+
+                    .signInCases {
+                        display: flex;
+                        justify-content: center;
+                        gap: 11px;
+
+                        .signIn {
+                            background-color: #153A5B;
+                            font-size: 15px;
+                            cursor: pointer;
+                            color: white;
+                            border: none;
+                            padding: 10.5px 60px;
+                            margin: 0 0 15px;
+
+                        }
+
+                        .forgotPassword {
+                            color: #5a5e60;
+                            text-decoration: underline;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .loginGuideline {
+                    margin-left: 22.5px;
+                    width: 438px;
+                    background-color: #f2f2f2;
+                    padding: 30px 30.5px;
+                    font-size: 15px;
+                    line-height: 1.5;
+
+
+                    .guidlineTitle {
+                        font-size: 16px;
+                        margin-bottom: 30px;
+                    }
+
+                    .guidlineText {
+
+                        color: #5a5e60;
+                    }
+
+                    .guidlineList {
+                        padding-left: 50px;
+                        margin-bottom: 25px;
+
+                        li {
+                            list-style: disc !important;
+
+                            color: #5a5e60;
+                        }
+                    }
+
+                 .create{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .createAccount {
+                        background-color: #153A5B;
+                        font-size: 15px;
+                        cursor: pointer;
+                        color: white;
+                        border: none;
+                        padding: 10.5px 60px;
+                        margin: 0 0 15px;
+
+                    }
+                 }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:780px) {
+    .loginPage {
+        .container {
+            .row {
+                .loginTitle {}
+
+                .loginContainer {
+
+
+
+
+                    .loginForm {
+
+
+                        .emailContainer {
+                            .label {}
+
+
+
+                            input[type="text"] {}
+                        }
+
+                        .passwordContainer {
+                            .label {}
+
+
+                            input[type="password"] {}
+
+                        }
+
+                        .signInCases {
+                            flex-direction: column;
+
+                            .signIn {}
+
+                            .forgotPassword {
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                    .loginGuideline {
+
+                        .guidlineTitle {}
+
+                        .guidlineText {}
+
+                        .guidlineList {
+
+                            li {}
+                        }
+
+                        .createAccount {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:720px) {
+    @media (max-width:780px) {
+        .loginPage {
+            .container {
+                .sectionTitle {
+                    font-size: 32px;
+                }
+
+                .row {
+
+
+                    .loginContainer {
+
+                        flex-direction: column;
+
+
+                        .loginForm {
+                            width: 100%;
+                            margin-bottom: 50px;
+
+                            .emailContainer {
+                                .label {}
+
+
+
+                                input[type="text"] {}
+                            }
+
+                            .passwordContainer {
+                                .label {}
+
+
+                                input[type="password"] {}
+
+                            }
+
+                            .signInCases {
+
+
+                                .signIn {}
+
+                                .forgotPassword {}
+                            }
+                        }
+
+                        .loginGuideline {
+                            width: 100%;
+                            margin-left: 0px;
+
+                            .guidlineTitle {}
+
+                            .guidlineText {}
+
+                            .guidlineList {
+
+                                li {}
+                            }
+
+                            .createAccount {
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

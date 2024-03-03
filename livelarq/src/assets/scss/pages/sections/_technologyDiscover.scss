@@ -1,0 +1,21 @@
+.technologyDiscover{
+    .container{
+        .row{
+            .techSwiper{
+                .technologySwiperSlider{
+                    width: 560px;
+                    border: 2px solid #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .technologyMedia{
+                        width:200px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

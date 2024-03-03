@@ -1,0 +1,58 @@
+.larqProducts{
+    .container{
+        .row{
+            display: flex;
+            gap: 40px;
+         .productCard{
+            width: 33%;
+            text-align: center;
+           line-height: 3;
+            .productCardImage{
+               
+               border-radius: 10px;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+            .productPreviewTitle{
+                font-size: 24px;
+            }
+            span{
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+         }
+        }
+    }
+}
+@media (max-width:780px) {
+    .larqProducts{
+        .container{
+            .row{
+                display: flex;
+            flex-direction: column;
+             .productCard{
+                width: 100%;
+                text-align: center;
+               line-height: 3;
+                .productCardImage{
+                   
+                   border-radius: 10px;
+                    img{
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+                .productPreviewTitle{
+                    font-size: 24px;
+                }
+                span{
+                    text-decoration: underline;
+                    text-underline-offset: 2px;
+                }
+             }
+            }
+        }
+    }
+}

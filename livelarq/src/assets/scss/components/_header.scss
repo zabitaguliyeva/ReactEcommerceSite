@@ -1,0 +1,278 @@
+.header {
+  width: 100%;
+  height: 72px;
+  background-color: #fff;
+  position: relative;
+  .container {
+    height: 100%;
+
+    .row {
+      height: 100%;
+      justify-content: space-between;
+
+      .navBarMenu {
+        display: none;
+      }
+
+      .shopCartLight {
+        display: none;
+      }
+
+      nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .navlink {
+          width: 100%;
+          display: flex;
+align-items: center;
+.languageBtn{
+  display: flex;
+height: 72px;
+align-items: center;
+  .languageButton{
+    display: flex;
+    align-items: center;
+    color: #153a5b;
+    font-size: 14px;
+    margin-left: 10px;
+    background-color: #fff;
+    border: 1px solid #96a4b0;
+padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #153a5b;
+    letter-spacing: 0.1rem;
+    line-height: 1.33333rem;
+    cursor: pointer;
+
+  }
+}
+          .navItem {
+            .leftItemLink {
+              padding-right: 40px;
+              font-size: 14px;
+              text-transform: uppercase;
+height: 100%;
+              font-weight: 700;
+              color: #153a5b;
+              letter-spacing: 0.1rem;
+              line-height: 1.33333rem;
+            }
+
+            .itemLink {
+              padding-left: 40px;
+              font-size: 14px;
+              text-transform: uppercase;
+              font-family: Value;
+              font-weight: 700;
+              color: #153a5b;
+              letter-spacing: 0.1rem;
+              line-height: 1.33333rem;
+              height: 100%;
+             
+            }
+          }
+          .navLinkWithDropdown {
+            position: relative;
+          }
+          .navLinkWithDropdown .dropdownContent {
+           display:flex;
+           visibility: hidden;
+           opacity: 0;
+            position: absolute;
+            top: 23.5px;
+            left: -64.5px;
+
+            width: 100vw;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000000;
+            padding: 20px 60px;
+            .upDownContents {
+              width: 28%;
+              .upContent {
+                .shopNow {
+                  @include primaryBtn();
+                  z-index: 12;
+                  font-size: 12px;
+                  text-transform: capitalize;
+                  width: 150px;
+                }
+                .dropdownLists {
+                  padding: 14px;
+
+                  li {
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    letter-spacing: 1;
+                  }
+                }
+              }
+              .downContent {
+                padding-top: 60px;
+                .learnMore {
+                  color: #757575;
+                  font-size: 10px;
+                  letter-spacing: 0.9;
+                  font-weight: 600;
+                }
+                .dropdownLists {
+                  padding: 14px;
+
+                  li {
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    letter-spacing: 1;
+                  }
+                }
+               
+              }
+            }
+            .dropdownImg {
+              width: 24%;
+              padding: 20px;
+              border-radius: 10px;
+              img {
+                width: 100%;
+                border-radius: 10px;
+              }
+            }
+          }
+
+          .navLinkWithDropdown:hover .dropdownContent {
+            visibility: visible;
+            opacity: 1;
+            justify-content: space-between;
+          }
+
+          .underline-hover {
+            position: relative;
+            transition: all 0.3s ease;
+          }
+          ::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #153a5b;
+            bottom: -2px;
+            left: 0;
+            transition: width 0.3s ease;
+          }
+          .underline-hover:hover::after {
+            width: 70%;
+          }
+
+          .cartItem {
+            padding-left: 40px;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: Value;
+            font-weight: 700;
+            color: #153a5b;
+            letter-spacing: 0.1rem;
+            line-height: 1.33333rem;
+            display: flex;
+            cursor: pointer;
+            .cartCounter {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              background-color: #153a5b;
+              color: #fff;
+              font-size: 12px;
+              width: 19px;
+              height: 19px;
+              padding: 3px;
+              margin-left: 4px;
+            }
+          }
+        }
+
+        .rightNav {
+          justify-content: flex-end;
+        }
+      }
+
+      .logo {
+        width: 185px;
+        height: 100%;
+
+        .larqLogo {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    height: 80px;
+
+    .container {
+      padding: 0 16px;
+
+      .row {
+        align-items: center;
+
+        .shopCartLight {
+          display: flex;
+          justify-content: flex-end;
+          font-size: 23px;
+          .shoppingIconCounter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #153a5b;
+            color: #fff;
+            font-size: 12px;
+            width: 15px;
+            height: 15px;
+          }
+        }
+
+        .navBarMenu {
+          display: block;
+        }
+
+        nav {
+          .navlink {
+            display: none;
+          }
+
+          .logo {
+            width: 164px;
+            height: 100%;
+
+            .larqLogo {
+              width: 100%;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.sticky {
+  width: 100%;
+  position: fixed;
+  z-index: 10000000000000;
+  background-color: #fff;
+  box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.2);
+}

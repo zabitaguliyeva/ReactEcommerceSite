@@ -1,0 +1,43 @@
+// Global Style
+@import "./mixin";
+@import "./base";
+
+// Pages Style
+@import "./pages/home";
+
+//Single Product
+@import "./pages/sections/singleProduct";
+
+// Components Style
+@import "./components/header";
+@import "./components/footer";
+@import "./components/cart";
+@import "./components/checkoutCard";
+@import "./components/menu";
+@import "./components/notFound";
+
+// Section style
+
+//?Home
+@import "./pages/sections/homeHero";
+@import "./pages/sections/review";
+@import "./pages/sections/article";
+@import "./pages/sections/larqProducts";
+@import "./pages/sections/homeMagazine";
+@import "./pages/sections/homeTrending";
+@import "./pages/sections/homeMission";
+
+
+
+//?Technology
+@import "./pages/sections/technologyDiscover";
+
+//?Login
+@import "./pages/sections/login";
+
+//?Faq
+@import "./pages/sections/faq";
+
+//?Shop All
+@import './pages/sections/shopAllNavigation';
+@import "./pages/sections/shopAllContentCard"

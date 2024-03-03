@@ -1,0 +1,153 @@
+.magazine {
+margin-top: 80px;
+margin-bottom: 120px;
+    .container {
+       
+
+        padding-right: 0;
+
+        .row {
+    
+            flex-direction: column;
+
+            .flexGroup {
+                display: flex;
+                justify-content: space-between;
+                margin-right: 40px;
+                
+                .basqBtn {
+                    @include primaryBtn();
+                    min-width: 180px;
+                
+                }
+
+                .magazineTitle {
+                    font-size: 19px;
+                    color: #153A5B;
+                    margin: 0 0 35px;
+                    line-height: 1.5;
+                }
+
+            }
+
+            .magazineCardContainer {
+                .mySwiper {
+                    height: 650px;
+                    .swiper-pagination {
+                        position: absolute;
+                      
+                    display: flex;
+                   
+      
+                        .swiper-pagination-bullet {
+
+                          width: 33%;
+                          height: 2px;
+                          background-color:#5a5e60 ;
+                   
+margin-right: 0;
+margin-left: 0;
+                        border-radius: 0px;
+                       
+                          cursor: pointer;
+                        }
+                    
+                        .swiper-pagination-bullet-active {
+                            background-color: #5a5e60;
+                        }
+                      }
+                    .magazineCard {
+                        width: 410px !important;
+
+                        .magazineCardImg {
+                            border-radius: 10px;
+
+                            img {
+                                width: 100%;
+                                border-radius: 10px;
+                            }
+
+                        }
+
+                        .magazineCardDetails {
+                            font-size: 18px;
+                            color: #153A5B;
+                            margin: 20px 0 20px 0;
+                            font-family: "ValueBold";
+                        }
+
+                        span {
+                            text-decoration: underline;
+                            margin-top: 20px;
+                          
+                        }
+                    }
+            }
+
+        }
+    }
+    }}
+    @media (max-width:780px) {
+        .magazine {
+            .container {
+                .row {
+                    
+        
+                    .flexGroup {
+                     flex-direction: column;
+                     padding-bottom: 30px;
+                        .basqBtn {
+                            @include primaryBtn();
+                           
+                            
+                        }
+                    }       
+                            }
+                    }
+                }
+            }
+            
+            @media (max-width:420px) {
+                .magazine {
+                    .container {
+                        padding-right: 0;  
+                        .row {
+                            .flexGroup {
+                            }
+                
+                            .magazineCardContainer {
+                
+                                .mySwiper {
+                                    .magazineCard {
+                                        width: 293px !important;
+                                    }
+                            }
+                
+                        }
+                    }
+                    }}
+            }
+            @media (max-width:320px) {
+                .magazine {
+                    .container {
+                        padding-right: 0;
+                
+                        .row {
+                           
+                
+                            .flexGroup {
+                            }
+                
+                            .magazineCardContainer {
+                
+                                .mySwiper {
+                                    .magazineCard {
+                                        width: 213px !important;
+                
+                                    }
+                            }
+                
+                        }
+                    }
+                    }}
+            }

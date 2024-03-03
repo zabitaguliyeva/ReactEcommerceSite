@@ -1,0 +1,17 @@
+{
+    "hero_heading": "One touch is all it takes",
+  "hero_detail": "To zap away odor with PureVis™.",
+    "shop_btn": "Shop now",
+    "languages":{
+      "az":"AZ",
+      "en":"EN"
+},
+"shopAll": "Shop All",
+"purification":"Purification",
+"home":"Home",
+"drinkware":"drinkware",
+"faq":"faq",
+"login":"login",
+"cart":"cart"
+
+  }

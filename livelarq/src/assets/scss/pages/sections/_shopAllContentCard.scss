@@ -1,0 +1,144 @@
+.shopAllContent {
+    .container {
+        .row {
+
+            width: 100%;
+
+            .details {
+
+                width: 50%;
+                background: linear-gradient(41.11deg, #FDF5E2 0%, rgba(235, 243, 249, 0) 100%);
+                border-radius: 10px;
+                padding: 60px;
+                max-height: 415px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-right: 24px;
+
+                .detailText {
+                    font-size: 19px;
+                    opacity: 0.8;
+                    line-height: 1.5;
+
+                }
+
+                .contentCardTitle {
+                    font-size: 50px;
+                    margin: 40px 0;
+                }
+            }
+
+            .cardMedia {
+                width: 50%;
+                border-radius: 10px;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:960px) {
+    .shopAllContent {
+        .container {
+            .row {
+
+                width: 100%;
+                flex-direction: column;
+
+                .details {
+                    margin-bottom: 40px;
+                    width: 100%;
+
+                    .detailText {
+                        font-size: 19px;
+
+                        line-height: 1.5;
+
+                    }
+
+                    .contentCardTitle {
+                        font-size: 50px;
+                        margin: 40px 0;
+                    }
+                }
+
+                .cardMedia {
+                    width: 100%;
+
+
+                    img {
+                        width: 100%;
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .shopAllContent {
+        .container {
+            .row {
+
+                width: 100%;
+
+                .details {
+
+                    .detailText {
+
+                        font-size: 16px;
+                    }
+
+                    .contentCardTitle {
+                        font-size: 36px;
+                        margin: 20px 0;
+                    }
+                }
+
+                .cardMedia {
+
+                    img {}
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .shopAllContent {
+        .container {
+            .row {
+
+                width: 100%;
+
+                .details {
+                    padding: 30px;
+
+                    .detailText {
+
+                        font-size: 16px;
+                    }
+
+                    .contentCardTitle {
+                        font-size: 32px;
+                        margin: 20px 0;
+                    }
+                }
+
+                .cardMedia {
+
+                    img {}
+                }
+            }
+        }
+    }
+}

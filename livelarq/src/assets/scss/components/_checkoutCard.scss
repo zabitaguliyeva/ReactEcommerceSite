@@ -1,0 +1,90 @@
+.checkout{
+  
+   padding-top: 40px;
+   border-bottom: 1px solid rgb(238, 238, 238);
+   padding-bottom: 15px;
+    .checkoutContainer{
+   display: flex;
+ 
+
+
+justify-content: space-between;
+        .checkoutImg{
+            width :20%;
+            height:auto;
+            background-color: #f5f6fa;
+            img{
+width:100%;
+height:100%
+            }
+          
+        }
+    .forDelete{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        width: 80%;
+        .mainGroup{
+            padding-left: 13px;
+      
+               .flexGroup{
+                   display: flex;
+                   align-items: center;
+                   flex-direction: column;
+                   .textGroup{
+                   
+                       .checkoutTitle{
+                           font-size: 15px;
+                       }
+                       .checkoutDetails{
+                           font-size: 13px;
+                           color: #757575;
+                           line-height: 2;
+                       }
+                      }
+                }
+                  
+                   .plusMinus{
+                       border: 1px solid #153a5b;
+                       width:90px;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       padding: 5px;
+                       border-radius: 50px;
+                      margin-top: 8px;
+                       .decreaseBtn{
+           background: none;
+           width: 45px;
+           
+           border: none;
+           .counters{
+             
+       background-color: aqua;
+           }
+                       }
+                       .increaseBtn{
+                           background: none;
+           width: 45px;
+                          
+           border: none;
+           
+                           
+                       }
+                   }
+                 
+           }
+           .deleteBtn{
+             
+               .button{
+                   background: none;
+                   border: none;
+                   color:#757575;
+                   font-size: 22px;
+               }
+           }
+    }
+   
+    }
+}

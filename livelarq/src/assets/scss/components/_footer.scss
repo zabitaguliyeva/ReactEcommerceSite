@@ -1,0 +1,285 @@
+footer {
+  background: #f5f9fc;
+
+  .container {
+    padding-right: 0px;
+    .row {
+      margin-top: 20px;
+      justify-content: space-between;
+
+      .newsletter {
+        margin-top: 40px;
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .newsletterTitle {
+          font-size: 37px;
+        }
+
+        .newsletterSubtitle {
+          font-size: 19px;
+          margin: 0 70px 10px 0;
+          line-height: 1.6;
+        }
+
+        .form {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #fff;
+          border: 1px solid #c8cccf;
+          border-radius: 24px;
+          padding: 10px 16px;
+
+          input[type="email"] {
+            border: none;
+          }
+
+          input[type="email"]:focus {
+            outline: none;
+          }
+
+          .arrow {
+            width: 24px;
+            height: 24px;
+            font-size: 16px;
+            background-color: #f5f9fc;
+            border-radius: 50%;
+          }
+        }
+
+        .socialLinks {
+          display: flex;
+
+          .social {
+            width: 36px;
+            height: 36px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 10px 30px 0 0;
+
+            a {
+              color: #153a5b;
+              font-size: 19px;
+            }
+          }
+        }
+       
+        .footerLegalLinks {
+          display: flex;
+          .legal {
+            margin-right: 40px;
+            color: #153a5b;
+          }
+        }
+      }
+
+      .linkListWrapper {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+        .linkList {
+          margin-top: 40px;
+
+          .myLinkList {
+            .linkItem {
+              .myLinkItem {
+                color: #153a5b;
+                font-size: 16px;
+                line-height: 3;
+                font-weight: 900;
+              }
+            }
+          }
+        }
+      }
+
+      .bicycleAnimation {
+        width: 33.33%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+//!Responsive
+@media (max-width: 1180px) {
+  footer {
+    .container {
+      padding: 20px;
+      .row {
+        justify-content: space-between;
+        .newsletter {
+          width: 385px;
+
+          .newsletterTitle {
+            font-size: 32px;
+            font-weight: 600;
+          }
+
+          .newsletterSubtitle {
+            font-size: 17px;
+          }
+
+          .form {
+            input[type="email"] {
+              padding: 5px 8px;
+              outline: none;
+            }
+
+            .arrow {
+              width: 24px;
+              height: 24px;
+              font-size: 16px;
+              background-color: #f5f9fc;
+              border-radius: 50%;
+            }
+          }
+
+          .socialLinks {
+            display: flex;
+
+            .social {
+              width: 36px;
+              height: 36px;
+              background-color: #fff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              margin: 10px 30px 0 0;
+
+              a {
+                color: #153a5b;
+                font-size: 19px;
+              }
+            }
+          }
+         
+        }
+
+        .linkListWrapper {
+          column-gap: 30px;
+          .linkList {
+            margin-top: 40px;
+
+            .myLinkList {
+              .linkItem {
+                .myLinkItem {
+                  color: #153a5b;
+                  font-size: 14px;
+                  line-height: 3;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+
+        .bicycleAnimation {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  footer {
+    .container {
+      padding: 20px;
+      .row {
+        flex-direction: column;
+        .newsletter {
+          width: 100%;
+
+          .newsletterTitle {
+            font-size: 30px;
+            font-weight: 600;
+          }
+
+          .newsletterSubtitle {
+            font-size: 17px;
+          }
+
+          .form {
+            input[type="email"] {
+              width: 100%;
+
+              padding: 5px 8px;
+              outline: none;
+            }
+
+            .arrow {
+              width: 24px;
+              height: 24px;
+              font-size: 16px;
+              background-color: #f5f9fc;
+              border-radius: 50%;
+            }
+          }
+
+          .socialLinks {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .social {
+              width: 36px;
+              height: 36px;
+              background-color: #fff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              margin: 10px 30px 0 0;
+
+              a {
+                color: #153a5b;
+                font-size: 19px;
+              }
+            }
+          }
+         
+          .footerLegalLinks {
+            display: flex;
+            .legal {
+              margin-right: 40px;
+              color: #153a5b;
+            }
+          }
+        }
+
+        .linkListWrapper {
+          margin-top: 20px;
+          flex-direction: column;
+          .linkList {
+            margin-top: 0px;
+
+            .myLinkList {
+              .linkItem {
+                .myLinkItem {
+                  color: #153a5b;
+                  font-size: 19px;
+                  line-height: 3;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+
+        .bicycleAnimation {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

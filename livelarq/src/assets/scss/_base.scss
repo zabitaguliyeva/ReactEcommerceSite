@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    padding: 0 64px;
+
+}
+@media (max-width:1200px) {
+    .container {
+        width: 100%;
+        padding: 0 40px;
+    
+    } 
+}
+@media (max-width:720px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    
+    } 
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+body {
+    font-family: 'Value', sans-serif;
+    color: #153A5B;
+}
+.sectionTitle {
+    font-size: 40px;
+    font-family: 'ValueBold';
+    margin: 0 0 60px;
+    font-weight: 600;
+}
+
+//?My fonts
+@font-face {
+    font-family: 'Value';
+    src: url('../fonts/ValueSansPro-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ValueBold';
+    src: url('../fonts/ValueSansPro-Bold.ttf') format('opentype');
+    font-weight: 300;
+
+}
+
+@font-face {
+    font-family: 'ValueBoldItalic';
+    src: url('../fonts/VALUE\ BoldItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ValueSansProBlack';
+    src: url('../fonts/ValueSansPro-Black.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ValueSansProBlackItalic';
+    src: url('../fonts/ValueSansPro-BlackItalic.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ValueSansMedium';
+    src: url('../fonts/ValueSansPro-Medium.ttf') format('opentype');
+}
+
